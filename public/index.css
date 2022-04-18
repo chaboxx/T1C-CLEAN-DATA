@@ -1,0 +1,47 @@
+.clean_data_container{
+  display: grid;
+  justify-content: center;
+}
+
+.text_subir_archivo{
+  font-size: 20px;
+  font-weight: 700;
+  justify-self: center;
+}
+
+input{
+  display: none;
+}
+
+.file_box{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#upload_file{
+
+  font-size: 75px;
+}
+
+.image{
+  width: 120px;
+  justify-self: center;
+}
+
+.button_send{
+  margin-top: 10px;
+  font-size: 15px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
