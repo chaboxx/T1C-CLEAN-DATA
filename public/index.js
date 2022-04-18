@@ -19,8 +19,8 @@ buttonSend.addEventListener("click", async(event)=>{
   }
   let data = new FormData();
   data.append("file",file.files[0])
-  console.log({data});
-  const res = await fetch("http://localhost:8080/clean-data",{
+
+  await fetch("http://localhost:8080/clean-data",{
     method:"POST",
     body:data,
 

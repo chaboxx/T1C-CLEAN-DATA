@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const { cleanCsv } = require("../helpers/clean-csv-getresponse")
 
-const cleanData = async (req,res) => {
+const cleanData = (req,res) => {
 
   try {
     const file = String(req.file.buffer);
@@ -16,7 +16,7 @@ const cleanData = async (req,res) => {
         })
       }
     });
-
+    
     return res.status(200).download("./assets/usuarios-data.csv")
     
   } catch (error) {
