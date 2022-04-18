@@ -1,4 +1,4 @@
-
+require("dotenv").config();
 
 const express = require("express");
 
@@ -23,6 +23,6 @@ app.use("/assets",express.static("./assets"))
 app.post("/clean-data",upload.single('file'),cleanData)
 
 
-app.listen(8080,()=>{
-  console.log("Servidor Corriendo en el puerto",8080)
+app.listen(process.env.PORT,()=>{
+  console.log("Servidor Corriendo en el puerto",process.env.PORT)
 })
