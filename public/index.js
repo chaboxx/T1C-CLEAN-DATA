@@ -20,7 +20,7 @@ buttonSend.addEventListener("click", async(event)=>{
   let data = new FormData();
   data.append("file",file.files[0])
 
-  await fetch("http://localhost:8080/clean-data",{
+  await fetch("https://t1c-ticx-clean-data.herokuapp.com/clean-data",{
     method:"POST",
     body:data,
 
